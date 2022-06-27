@@ -1,17 +1,14 @@
-'''
-Function:
-	Define the bird class.
-Author:
-	Charles
-微信公众号:
-	Charles的皮卡丘
-'''
+
 import pygame
 import itertools
 
 
-'''bird class'''
+
 class Bird(pygame.sprite.Sprite):
+	'''
+	小鸟精灵
+	'''
+	
 	def __init__(self, images, idx, position, **kwargs):
 		pygame.sprite.Sprite.__init__(self)
 		self.images = images
@@ -28,6 +25,12 @@ class Bird(pygame.sprite.Sprite):
 		self.bird_idx_change_count = 0
 	'''update bird'''
 	def update(self, boundary_values):
+		'''
+		
+		:param boundary_values:边界信息 
+		:return: 
+		'''
+		
 		# update the position vertically
 		if not self.is_flapped:
 			self.speed = min(self.speed+1, 10)

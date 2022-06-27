@@ -1,11 +1,4 @@
-'''
-Function:
-	Define the pipe class.
-Author:
-	Charles
-微信公众号:
-	Charles的皮卡丘
-'''
+
 import random
 import pygame
 
